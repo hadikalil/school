@@ -18,7 +18,7 @@ function getAllPosts() {
 
 
 function fillGrades(data) {
-  console.log(data);
+  console.log(data.name);
   const values = [data.name, data.class, data.numberInput];
   return db.query(
     "INSERT INTO class_student(student_id, class_id, grade) VALUES($1, $2, $3)",
